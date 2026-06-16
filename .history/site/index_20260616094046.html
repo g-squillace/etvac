@@ -1,0 +1,1912 @@
+<!doctype html>
+<html lang="it" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E Ti Vengo a Cercare 2026 – Siena Music Contest</title>
+    <meta
+      name="description"
+      content="Contest musicale per artisti e band emergenti under 35 a Siena. Premi discografici, registrazione in studio professionale e opportunità di promozione per la musica originale. 28 dicembre 2026, Teatro dei Rinnovati."
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <link
+      rel="preload"
+      href="fonts/FormaDJRDisplay-Black.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/FormaDJRDisplay-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" as="image" href="img/wave-blue.png" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="E Ti Vengo a Cercare 2026 – Siena Music Contest"
+    />
+    <meta
+      property="og:description"
+      content="Il contest di musica originale dedicato ad artisti, cantautori e band under 35. 28 dicembre 2026, Teatro dei Rinnovati, Siena."
+    />
+    <meta property="og:image" content="img/wave-orange.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              orange: "#e85321",
+              yellow: "#eae33a",
+              gray: "#cacaca",
+              blue: "#155da2",
+              ink: "#0a0a0a",
+            },
+            fontFamily: {
+              display: ['"Forma DJR Display"', "system-ui", "sans-serif"],
+            },
+            fontSize: {
+              mega: [
+                "clamp(3.5rem, 16vw, 17rem)",
+                { lineHeight: "0.82", letterSpacing: "-0.03em" },
+              ],
+              hero: [
+                "clamp(2.6rem, 10vw, 9.5rem)",
+                { lineHeight: "0.86", letterSpacing: "-0.025em" },
+              ],
+              jumbo: [
+                "clamp(2.1rem, 6.5vw, 6rem)",
+                { lineHeight: "0.9", letterSpacing: "-0.02em" },
+              ],
+              title: [
+                "clamp(1.7rem, 4vw, 3.6rem)",
+                { lineHeight: "0.95", letterSpacing: "-0.015em" },
+              ],
+              head: [
+                "clamp(1.35rem, 2.4vw, 2.2rem)",
+                { lineHeight: "1.04", letterSpacing: "-0.01em" },
+              ],
+              lead: [
+                "clamp(1.1rem, 1.75vw, 1.6rem)",
+                { lineHeight: "1.5", letterSpacing: "0.015em" },
+              ],
+              body: [
+                "clamp(1rem, 1.15vw, 1.2rem)",
+                { lineHeight: "1.65", letterSpacing: "0.02em" },
+              ],
+              fine: [
+                "clamp(0.82rem, 0.95vw, 1rem)",
+                { lineHeight: "1.55", letterSpacing: "0.035em" },
+              ],
+              eyebrow: [
+                "clamp(0.72rem, 0.85vw, 0.92rem)",
+                { lineHeight: "1.2", letterSpacing: "0.28em" },
+              ],
+            },
+            spacing: {
+              gutter: "clamp(1.25rem, 5vw, 8rem)",
+              section: "clamp(4.5rem, 11vw, 12rem)",
+            },
+            maxWidth: {
+              shell: "min(112rem, 100%)",
+              prose: "68ch",
+            },
+            keyframes: {
+              marquee: {
+                "0%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(-50%)" },
+              },
+              spin: {
+                to: { transform: "rotate(360deg)" },
+              },
+              drift: {
+                "0%,100%": { transform: "translate3d(0,0,0) scale(1)" },
+                "50%": { transform: "translate3d(2%,-2%,0) scale(1.06)" },
+              },
+              wave: {
+                "0%": { transform: "translateX(0)" },
+                "100%": { transform: "translateX(-50%)" },
+              },
+              floaty: {
+                "0%,100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-1.5%)" },
+              },
+            },
+            animation: {
+              marquee: "marquee 28s linear infinite",
+              "marquee-slow": "marquee 45s linear infinite",
+              "gallery-l": "marquee 55s linear infinite",
+              "gallery-r": "marquee 62s linear infinite reverse",
+              "spin-slow": "spin 26s linear infinite",
+              drift: "drift 18s ease-in-out infinite",
+              wave: "wave 14s linear infinite",
+              "wave-slow": "wave 22s linear infinite",
+              floaty: "floaty 9s ease-in-out infinite",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @font-face {
+        font-family: "Forma DJR Display";
+        src: url("fonts/FormaDJRDisplay-Thin.woff2") format("woff2");
+        font-weight: 200;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Forma DJR Display";
+        src: url("fonts/FormaDJRDisplay-Light.woff2") format("woff2");
+        font-weight: 300;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Forma DJR Display";
+        src: url("fonts/FormaDJRDisplay-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Forma DJR Display";
+        src: url("fonts/FormaDJRDisplay-Medium.woff2") format("woff2");
+        font-weight: 500;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Forma DJR Display";
+        src: url("fonts/FormaDJRDisplay-Bold.woff2") format("woff2");
+        font-weight: 700;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Forma DJR Display";
+        src: url("fonts/FormaDJRDisplay-Black.woff2") format("woff2");
+        font-weight: 900;
+        font-display: swap;
+      }
+
+      :root {
+        --c-orange: #e85321;
+        --c-yellow: #eae33a;
+        --c-blue: #155da2;
+      }
+
+      @keyframes wave {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
+      .op-art {
+        background-image: repeating-linear-gradient(
+          90deg,
+          currentColor 0,
+          currentColor 1.5px,
+          transparent 1.5px,
+          transparent 9px
+        );
+        -webkit-mask-image: radial-gradient(
+          circle at center,
+          #000 70%,
+          transparent 71%
+        );
+        mask-image: radial-gradient(
+          circle at center,
+          #000 70%,
+          transparent 71%
+        );
+      }
+
+      .blur-edge {
+        filter: blur(0.4px) saturate(1.05);
+      }
+
+      .text-stroke {
+        -webkit-text-stroke: clamp(1px, 0.18vw, 2.5px) currentColor;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-ink font-display text-white antialiased selection:bg-yellow selection:text-ink"
+  >
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-yellow focus:px-5 focus:py-3 focus:text-fine focus:font-bold focus:text-ink"
+      >Salta al contenuto</a
+    >
+
+    <header
+      id="site-header"
+      class="fixed inset-x-0 top-0 z-50 transition-colors duration-300"
+    >
+      <div
+        class="mx-auto flex max-w-shell items-center justify-between px-gutter py-[clamp(1rem,1.6vw,1.75rem)]"
+      >
+        <nav
+          aria-label="Navigazione principale"
+          class="flex items-center gap-[clamp(0.9rem,2vw,2.25rem)]"
+        >
+          <a
+            href="#main"
+            class="sr-only focus:not-sr-only focus:rounded-full focus:bg-yellow focus:px-3 focus:py-2 focus:text-ink"
+            >Home</a
+          >
+          <a
+            href="#contest"
+            class="hidden text-fine font-bold uppercase tracking-[0.18em] text-gray transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow md:inline"
+            >Il contest</a
+          >
+          <a
+            href="#premi"
+            class="hidden text-fine font-bold uppercase tracking-[0.18em] text-gray transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow md:inline"
+            >Premi</a
+          >
+          <a
+            href="#gallery"
+            class="hidden text-fine font-bold uppercase tracking-[0.18em] text-gray transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow md:inline"
+            >Gallery</a
+          >
+          <a
+            href="#visibilita"
+            class="hidden text-fine font-bold uppercase tracking-[0.18em] text-gray transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow md:inline"
+            >Visibilità</a
+          >
+          <a
+            href="#iscrizioni"
+            class="hidden text-fine font-bold uppercase tracking-[0.18em] text-gray transition hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-yellow md:inline"
+            >Iscrizioni</a
+          >
+        </nav>
+        <a
+          href="#form"
+          class="inline-flex min-h-[44px] items-center rounded-full bg-yellow px-[clamp(1.1rem,1.6vw,1.9rem)] py-[clamp(0.55rem,0.7vw,0.85rem)] text-fine font-bold uppercase tracking-wide text-ink transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-white"
+          >Iscriviti</a
+        >
+      </div>
+    </header>
+
+    <main id="main">
+      <section
+        class="relative isolate flex min-h-[100svh] flex-col justify-end overflow-hidden"
+      >
+        <div class="absolute inset-0 -z-10">
+          <img
+            src="img/wave-blue.png"
+            alt=""
+            aria-hidden="true"
+            class="h-full w-full scale-110 object-cover blur-edge motion-safe:animate-drift"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/45"
+          ></div>
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/20 to-blue/20"
+          ></div>
+        </div>
+
+        <div
+          aria-hidden="true"
+          class="op-art pointer-events-none absolute -right-[8%] top-[12%] -z-[5] aspect-square w-[clamp(14rem,34vw,40rem)] text-yellow/70 mix-blend-overlay motion-safe:animate-spin-slow"
+        ></div>
+
+        <div
+          class="mx-auto grid w-full max-w-shell items-center gap-[clamp(2.5rem,5vw,5rem)] px-gutter pb-[clamp(2.5rem,5vw,5rem)] pt-[clamp(7rem,14vw,11rem)] lg:grid-cols-12"
+        >
+          <div class="lg:col-span-7">
+            <p
+              class="mb-[clamp(1.25rem,2.5vw,2.5rem)] flex flex-wrap items-center gap-x-4 gap-y-2 text-eyebrow font-medium uppercase text-yellow"
+            >
+              <span>Siena Music Contest</span>
+              <span aria-hidden="true" class="text-gray/60">●</span>
+              <span class="text-white">Edizione 2026</span>
+            </p>
+
+            <h1 class="font-black uppercase leading-[0.82]">
+              <span class="block text-hero text-white">E Ti Vengo</span>
+              <span class="block text-hero text-stroke text-white"
+                >a Cercare</span
+              >
+              <span
+                class="mt-[clamp(0.5rem,1vw,1rem)] block text-mega text-orange"
+                >2026</span
+              >
+            </h1>
+
+            <p
+              class="mt-[clamp(1.5rem,3vw,2.5rem)] max-w-prose text-lead font-normal text-gray"
+            >
+              Il contest di musica originale dedicato ad artisti, cantautori e
+              band
+              <span class="font-medium text-white">under 35</span>. Porta la tua
+              canzone sul palco del Teatro dei Rinnovati e falla ascoltare a chi
+              può fare la differenza.
+            </p>
+
+            <div
+              class="mt-[clamp(2rem,3.5vw,3rem)] flex flex-col flex-wrap items-start gap-[clamp(0.75rem,1.2vw,1.25rem)] sm:flex-row sm:items-center"
+            >
+              <a
+                href="#form"
+                class="inline-flex min-h-[44px] items-center gap-3 rounded-full bg-orange px-[clamp(1.5rem,2.2vw,2.5rem)] py-[clamp(0.85rem,1vw,1.15rem)] text-body font-bold uppercase tracking-wide text-white transition hover:bg-yellow hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-yellow"
+              >
+                Iscriviti ora
+                <span aria-hidden="true">→</span>
+              </a>
+              <a
+                href="#premi"
+                class="inline-flex min-h-[44px] items-center rounded-full border border-white/30 px-[clamp(1.5rem,2.2vw,2.5rem)] py-[clamp(0.85rem,1vw,1.15rem)] text-body font-medium uppercase tracking-wide text-white transition hover:border-white hover:bg-white hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-white"
+              >
+                Scopri i premi
+              </a>
+            </div>
+
+            <dl
+              class="mt-[clamp(2.5rem,4vw,4rem)] grid max-w-3xl grid-cols-2 gap-[clamp(1rem,2vw,2rem)] border-t border-white/15 pt-[clamp(1.5rem,2.5vw,2.5rem)] sm:grid-cols-3"
+            >
+              <div>
+                <dt class="text-eyebrow uppercase text-gray">Data</dt>
+                <dd class="mt-1 text-head font-bold text-white">28 Dic 2026</dd>
+              </div>
+              <div>
+                <dt class="text-eyebrow uppercase text-gray">Luogo</dt>
+                <dd class="mt-1 text-head font-bold text-white">
+                  Teatro dei Rinnovati
+                </dd>
+              </div>
+              <div class="col-span-2 sm:col-span-1">
+                <dt class="text-eyebrow uppercase text-gray">Finalisti</dt>
+                <dd class="mt-1 text-head font-bold text-yellow">
+                  10 progetti dal vivo
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div
+              class="relative mx-auto w-full max-w-[32rem] motion-safe:animate-floaty"
+            >
+              <figure
+                class="group relative aspect-[4/5] w-full overflow-hidden rounded-[clamp(1.5rem,2.5vw,2.5rem)] border border-white/15 shadow-2xl shadow-black/40"
+              >
+                <img
+                  src="img/hero/026.jpg"
+                  alt="Artista sul palco di E Ti Vengo a Cercare"
+                  class="h-full w-full scale-105 object-cover motion-safe:animate-drift"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent"
+                ></div>
+                <figcaption
+                  class="absolute inset-x-0 bottom-0 p-[clamp(1rem,2vw,1.75rem)] text-fine font-medium uppercase tracking-wide text-white/90"
+                >
+                  Live · Teatro dei Rinnovati
+                </figcaption>
+              </figure>
+              <img
+                src="img/logo-mi.svg"
+                alt=""
+                aria-hidden="true"
+                class="absolute -right-[clamp(1rem,2.5vw,2rem)] -top-[clamp(1rem,2.5vw,2rem)] w-[clamp(4.5rem,9vw,7rem)] drop-shadow-[0_4px_16px_rgba(0,0,0,0.55)]"
+                width="120"
+                height="120"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        id="marquee"
+        class="overflow-hidden bg-yellow py-[clamp(0.6rem,1vw,1rem)] text-ink"
+      >
+        <div
+          class="flex w-max animate-marquee whitespace-nowrap will-change-transform"
+          aria-hidden="true"
+        >
+          <span
+            class="flex items-center text-[clamp(1.5rem,3.5vw,3rem)] font-black uppercase tracking-tight"
+          >
+            <span class="px-6">Musica originale</span
+            ><span class="px-6 text-orange">✦</span>
+            <span class="px-6">Under 35</span
+            ><span class="px-6 text-orange">✦</span>
+            <span class="px-6">Artisti · Cantautori · Band</span
+            ><span class="px-6 text-orange">✦</span>
+            <span class="px-6">Teatro dei Rinnovati</span
+            ><span class="px-6 text-orange">✦</span>
+          </span>
+          <span
+            class="flex items-center text-[clamp(1.5rem,3.5vw,3rem)] font-black uppercase tracking-tight"
+          >
+            <span class="px-6">Musica originale</span
+            ><span class="px-6 text-orange">✦</span>
+            <span class="px-6">Under 35</span
+            ><span class="px-6 text-orange">✦</span>
+            <span class="px-6">Artisti · Cantautori · Band</span
+            ><span class="px-6 text-orange">✦</span>
+            <span class="px-6">Teatro dei Rinnovati</span
+            ><span class="px-6 text-orange">✦</span>
+          </span>
+        </div>
+      </div>
+
+      <section
+        id="contest"
+        class="relative overflow-hidden bg-ink py-section scroll-mt-24"
+      >
+        <div
+          class="mx-auto grid max-w-shell gap-[clamp(2rem,5vw,5rem)] px-gutter lg:grid-cols-12"
+        >
+          <div class="lg:col-span-7">
+            <p class="text-eyebrow uppercase text-orange">Il contest</p>
+            <h2
+              class="mt-[clamp(1rem,1.5vw,1.5rem)] text-jumbo font-black uppercase"
+            >
+              Il talento emergente<br />
+              <span class="text-stroke text-white">sul palco</span> che conta
+            </h2>
+          </div>
+          <div
+            class="space-y-[clamp(1.25rem,2vw,2rem)] text-body text-gray lg:col-span-5 lg:pt-[clamp(1rem,3vw,4rem)]"
+          >
+            <p>
+              Hai una canzone originale da far ascoltare al pubblico e ai
+              professionisti del settore?
+              <span class="font-medium text-white"
+                >E Ti Vengo a Cercare 2026</span
+              >
+              è il contest musicale che valorizza il talento emergente e offre
+              concrete opportunità di crescita artistica e professionale.
+            </p>
+            <p>
+              Sul prestigioso palco del
+              <span class="font-medium text-white"
+                >Teatro dei Rinnovati di Siena</span
+              >, dieci progetti selezionati si sfideranno dal vivo davanti a una
+              giuria composta da professionisti della musica e dello spettacolo.
+            </p>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-section max-w-shell px-gutter">
+          <div
+            class="grid items-center gap-[clamp(2rem,5vw,5rem)] lg:grid-cols-2"
+          >
+            <div
+              class="relative overflow-hidden rounded-[clamp(1.5rem,2.5vw,2.5rem)]"
+            >
+              <img
+                src="img/wave-orange.png"
+                alt="Visualizzazione astratta di onde sonore nei colori del contest"
+                class="aspect-[4/5] w-full scale-110 object-cover blur-edge motion-safe:animate-drift"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <p class="text-eyebrow uppercase text-orange">La giuria</p>
+              <h2
+                class="mt-[clamp(1rem,1.5vw,1.5rem)] text-title font-black uppercase"
+              >
+                Una giuria di professionisti del settore musicale
+              </h2>
+              <p class="mt-[clamp(1rem,1.5vw,1.5rem)] text-body text-gray">
+                Le esibizioni saranno valutate da una giuria qualificata. La
+                classifica finale decreterà i vincitori dei premi ufficiali del
+                contest.
+              </p>
+              <ul
+                class="mt-[clamp(1.5rem,2.5vw,2.5rem)] grid gap-px overflow-hidden rounded-2xl bg-white/15 sm:grid-cols-2"
+              >
+                <li class="bg-ink p-[clamp(1.1rem,1.6vw,1.75rem)]">
+                  <span class="text-head font-bold text-yellow">01</span>
+                  <p class="mt-2 text-body font-medium text-white">
+                    Docenti di scuole di musica
+                  </p>
+                </li>
+                <li class="bg-ink p-[clamp(1.1rem,1.6vw,1.75rem)]">
+                  <span class="text-head font-bold text-yellow">02</span>
+                  <p class="mt-2 text-body font-medium text-white">
+                    Produttori musicali
+                  </p>
+                </li>
+                <li class="bg-ink p-[clamp(1.1rem,1.6vw,1.75rem)]">
+                  <span class="text-head font-bold text-yellow">03</span>
+                  <p class="mt-2 text-body font-medium text-white">
+                    Musicisti professionisti
+                  </p>
+                </li>
+                <li class="bg-ink p-[clamp(1.1rem,1.6vw,1.75rem)]">
+                  <span class="text-head font-bold text-yellow">04</span>
+                  <p class="mt-2 text-body font-medium text-white">
+                    Manager ed esperti dell'industria
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="premi"
+        class="relative overflow-hidden bg-orange py-section text-ink"
+      >
+        <div
+          aria-hidden="true"
+          class="op-art pointer-events-none absolute -left-[10%] -top-[10%] aspect-square w-[clamp(16rem,30vw,34rem)] text-ink/20 motion-safe:animate-spin-slow"
+        ></div>
+        <div class="relative mx-auto max-w-shell px-gutter">
+          <div
+            class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between"
+          >
+            <div>
+              <p class="text-eyebrow uppercase text-ink/70">I premi</p>
+              <h2
+                class="mt-[clamp(0.75rem,1.5vw,1.5rem)] text-jumbo font-black uppercase"
+              >
+                Premi
+              </h2>
+            </div>
+            <p class="max-w-prose text-body font-medium text-ink/80">
+              Opportunità concrete per trasformare il tuo brano in un progetto
+              pronto a raggiungere il pubblico.
+            </p>
+          </div>
+
+          <div
+            class="mt-[clamp(2.5rem,4vw,4rem)] grid gap-[clamp(1rem,1.5vw,1.5rem)] lg:grid-cols-3"
+          >
+            <article
+              class="flex flex-col rounded-[clamp(1.25rem,2vw,2rem)] bg-ink p-[clamp(1.5rem,2.2vw,2.5rem)] text-white lg:row-span-2 lg:justify-between"
+            >
+              <div>
+                <span class="text-[clamp(2.5rem,5vw,4.5rem)]" aria-hidden="true"
+                  >🏆</span
+                >
+                <h3 class="mt-4 text-eyebrow uppercase text-yellow">
+                  Primo premio
+                </h3>
+                <p class="mt-3 text-title font-black uppercase leading-[0.95]">
+                  3 giorni di registrazione professionale
+                </p>
+              </div>
+              <p class="mt-[clamp(1.5rem,2vw,2rem)] text-body text-gray">
+                Tre giorni in uno studio di registrazione professionale per dare
+                al tuo brano la forma definitiva.
+              </p>
+            </article>
+
+            <article
+              class="flex flex-col rounded-[clamp(1.25rem,2vw,2rem)] bg-yellow p-[clamp(1.5rem,2.2vw,2.5rem)] text-ink"
+            >
+              <span class="text-[clamp(2rem,4vw,3.5rem)]" aria-hidden="true"
+                >🥈</span
+              >
+              <h3 class="mt-3 text-eyebrow uppercase text-ink/70">
+                Secondo premio
+              </h3>
+              <p class="mt-2 text-head font-black uppercase leading-[0.98]">
+                Incisione in presa diretta
+              </p>
+              <p class="mt-3 text-body text-ink/80">
+                Registrazione del brano vincitore in presa diretta in studio
+                professionale, con videoregistrazione della live session
+                realizzata da un videomaker professionista.
+              </p>
+            </article>
+
+            <article
+              class="flex flex-col rounded-[clamp(1.25rem,2vw,2rem)] bg-gray p-[clamp(1.5rem,2.2vw,2.5rem)] text-ink"
+            >
+              <span class="text-[clamp(2rem,4vw,3.5rem)]" aria-hidden="true"
+                >🥉</span
+              >
+              <h3 class="mt-3 text-eyebrow uppercase text-ink/60">
+                Terzo premio
+              </h3>
+              <p class="mt-2 text-head font-black uppercase leading-[0.98]">
+                Buono da 500€
+              </p>
+              <p class="mt-3 text-body text-ink/70">
+                Da utilizzare presso uno dei principali negozi di strumenti
+                musicali e accessori di Siena.
+              </p>
+            </article>
+
+            <article
+              class="flex flex-col rounded-[clamp(1.25rem,2vw,2rem)] bg-blue p-[clamp(1.5rem,2.2vw,2.5rem)] text-white lg:col-span-1"
+            >
+              <span class="text-[clamp(2rem,4vw,3.5rem)]" aria-hidden="true"
+                >🎵</span
+              >
+              <h3 class="mt-3 text-eyebrow uppercase text-yellow">
+                Premio discografico
+              </h3>
+              <p class="mt-2 text-head font-black uppercase leading-[0.98]">
+                Etichetta Oltresound
+              </p>
+              <p class="mt-3 text-body text-white/85">
+                Produzione, promozione e distribuzione del brano attraverso
+                l'etichetta discografica Oltresound.
+              </p>
+            </article>
+
+            <article
+              class="flex flex-col rounded-[clamp(1.25rem,2vw,2rem)] bg-ink p-[clamp(1.5rem,2.2vw,2.5rem)] text-white"
+            >
+              <span class="text-[clamp(2rem,4vw,3.5rem)]" aria-hidden="true"
+                >✍️</span
+              >
+              <h3 class="mt-3 text-eyebrow uppercase text-yellow">
+                Premio della critica
+              </h3>
+              <p class="mt-2 text-head font-black uppercase leading-[0.98]">
+                Miglior testo originale
+              </p>
+              <p class="mt-3 text-body text-gray">
+                Assegnato al miglior testo originale, scelto da una giuria
+                composta da cantautori e giornalisti specializzati nel settore
+                musicale.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="gallery"
+        class="relative overflow-hidden bg-ink py-section scroll-mt-24"
+      >
+        <div class="mx-auto mb-[clamp(2.5rem,4vw,4rem)] max-w-shell px-gutter">
+          <div
+            class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between"
+          >
+            <div>
+              <p class="text-eyebrow uppercase text-orange">Gallery</p>
+              <h2
+                class="mt-[clamp(0.75rem,1.5vw,1.5rem)] text-jumbo font-black uppercase"
+              >
+                Le edizioni<br /><span class="text-stroke text-white"
+                  >sul palco</span
+                >
+              </h2>
+            </div>
+            <p class="max-w-prose text-body text-gray">
+              Immagini dal vivo delle scorse edizioni del contest. Clicca su una
+              foto per aprirla a tutto schermo.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-[clamp(0.6rem,1vw,1rem)]">
+          <div class="relative overflow-hidden">
+            <ul
+              data-marquee
+              class="flex h-[clamp(10rem,17vw,16rem)] w-max items-stretch gap-[clamp(0.6rem,1vw,1rem)] motion-safe:animate-gallery-l hover:[animation-play-state:paused]"
+            >
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/011.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/011.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/016.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/016.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/027.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/027.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/030.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/030.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/037.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/037.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/064.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/064.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/081.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/081.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/094.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/094.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/098.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/098.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="relative overflow-hidden">
+            <ul
+              data-marquee
+              class="flex h-[clamp(10rem,17vw,16rem)] w-max items-stretch gap-[clamp(0.6rem,1vw,1rem)] motion-safe:animate-gallery-r hover:[animation-play-state:paused]"
+            >
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/154.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/154.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/186.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/186.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/209.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/209.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/237.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/237.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1575.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1575.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1580.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1580.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1587.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1587.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1596.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1596.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1600.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1600.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="relative overflow-hidden">
+            <ul
+              data-marquee
+              class="flex h-[clamp(10rem,17vw,16rem)] w-max items-stretch gap-[clamp(0.6rem,1vw,1rem)] motion-safe:animate-gallery-l hover:[animation-play-state:paused]"
+            >
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1604.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1604.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1610.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1610.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1617.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1617.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1758.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1758.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1760.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1760.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1761.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1761.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1762.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1762.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+              <li class="shrink-0">
+                <button
+                  type="button"
+                  data-gallery-item
+                  data-full="img/gallery/Brembilla-1763.jpg"
+                  data-caption="E Ti Vengo a Cercare — Live"
+                  class="group block h-full overflow-hidden rounded-[clamp(0.6rem,1.2vw,1.1rem)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                >
+                  <img
+                    src="img/gallery/Brembilla-1763.jpg"
+                    alt="Foto live E Ti Vengo a Cercare"
+                    loading="lazy"
+                    class="h-full w-auto object-cover transition duration-500 group-hover:brightness-110"
+                  />
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="visibilita"
+        class="relative overflow-hidden bg-blue py-section text-white scroll-mt-24"
+      >
+        <div class="absolute inset-0 -z-10 opacity-30">
+          <img
+            src="img/wave-amber.png"
+            alt=""
+            aria-hidden="true"
+            class="h-full w-full scale-110 object-cover mix-blend-soft-light blur-edge motion-safe:animate-drift"
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="mx-auto grid max-w-shell items-center gap-[clamp(2rem,4vw,4rem)] px-gutter lg:grid-cols-2"
+        >
+          <div>
+            <p class="text-eyebrow uppercase text-yellow">Visibilità</p>
+            <h2
+              class="mt-[clamp(1rem,1.5vw,1.5rem)] text-jumbo font-black uppercase"
+            >
+              Un'opportunità di visibilità concreta
+            </h2>
+          </div>
+          <div
+            class="space-y-[clamp(1.25rem,2vw,2rem)] text-lead text-white/90"
+          >
+            <p>
+              Le
+              <span class="font-bold text-yellow">10 canzoni finaliste</span>
+              saranno diffuse all'interno di tutti gli store di
+              <span class="font-bold text-white">Etruria Retail</span>
+              dal 1° gennaio al 30 giugno 2027.
+            </p>
+            <p class="text-body text-white/75">
+              Una significativa occasione di ascolto e promozione sul
+              territorio, davanti a migliaia di persone ogni giorno.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="iscrizioni"
+        class="relative overflow-hidden bg-yellow py-section text-ink scroll-mt-24"
+      >
+        <div class="mx-auto max-w-shell px-gutter">
+          <div
+            class="grid gap-[clamp(2rem,4vw,4rem)] lg:grid-cols-12 lg:items-end"
+          >
+            <div class="lg:col-span-7">
+              <p class="text-eyebrow uppercase text-orange">
+                Iscrizioni aperte
+              </p>
+              <h2
+                class="mt-[clamp(1rem,1.5vw,1.5rem)] text-jumbo font-black uppercase leading-[0.9]"
+              >
+                Candidature fino al<br />
+                <span class="text-orange">15 novembre 2026</span>
+              </h2>
+            </div>
+            <div class="lg:col-span-5">
+              <p class="text-body text-ink/80">
+                Le candidature sono aperte fino alle ore 23:59 del 15 novembre
+                2026. Consulta il regolamento ufficiale, verifica i requisiti di
+                partecipazione e completa il modulo di iscrizione.
+              </p>
+              <div
+                class="mt-[clamp(1.5rem,2vw,2rem)] flex flex-col gap-[clamp(0.75rem,1vw,1rem)] sm:flex-row"
+              >
+                <a
+                  href="#form"
+                  class="inline-flex min-h-[44px] flex-1 items-center justify-center gap-3 rounded-full bg-ink px-[clamp(1.25rem,2vw,2rem)] py-[clamp(0.85rem,1vw,1.15rem)] text-body font-bold uppercase tracking-wide text-white transition hover:bg-orange focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-ink"
+                >
+                  Vai al modulo <span aria-hidden="true">↓</span>
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex min-h-[44px] flex-1 items-center justify-center rounded-full border-2 border-ink px-[clamp(1.25rem,2vw,2rem)] py-[clamp(0.85rem,1vw,1.15rem)] text-body font-bold uppercase tracking-wide text-ink transition hover:bg-ink hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-ink"
+                >
+                  Regolamento
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="form"
+        class="relative overflow-hidden bg-ink py-section scroll-mt-24"
+      >
+        <div class="mx-auto max-w-shell px-gutter">
+          <div class="grid gap-[clamp(2rem,4vw,4rem)] lg:grid-cols-12">
+            <div class="lg:col-span-5">
+              <p class="text-eyebrow uppercase text-orange">
+                Modulo di iscrizione
+              </p>
+              <h2
+                class="mt-[clamp(1rem,1.5vw,1.5rem)] text-title font-black uppercase leading-[0.92]"
+              >
+                Candida il tuo brano
+              </h2>
+              <p class="mt-[clamp(1.25rem,2vw,2rem)] text-body text-gray">
+                Per risultare correttamente iscritti è necessario:
+              </p>
+              <ul
+                class="mt-[clamp(1rem,1.5vw,1.5rem)] space-y-3 text-body text-gray"
+              >
+                <li class="flex gap-3">
+                  <span aria-hidden="true" class="mt-1 text-orange">→</span>
+                  compilare il modulo in ogni sua parte obbligatoria;
+                </li>
+                <li class="flex gap-3">
+                  <span aria-hidden="true" class="mt-1 text-orange">→</span>
+                  allegare la demo del brano, il testo (con traduzione se in
+                  inglese), una sintesi del testo e una breve biografia;
+                </li>
+                <li class="flex gap-3">
+                  <span aria-hidden="true" class="mt-1 text-orange">→</span>
+                  leggere e accettare regolamento e informativa privacy;
+                </li>
+                <li class="flex gap-3">
+                  <span aria-hidden="true" class="mt-1 text-orange">→</span>
+                  effettuare il bonifico della quota di iscrizione di
+                  <span class="font-medium text-white">€&nbsp;20,00</span>
+                  all'IBAN dell'Associazione Arturo Pratelli.
+                </li>
+              </ul>
+              <div
+                class="mt-[clamp(1.5rem,2.5vw,2.5rem)] space-y-3 rounded-2xl border border-white/10 bg-white/[0.03] p-[clamp(1.1rem,1.6vw,1.75rem)] text-fine text-gray"
+              >
+                <p>
+                  Non hai ancora una demo? Scrivici a
+                  <a
+                    href="mailto:assarturopratelli.eventi@gmail.com"
+                    class="font-medium text-yellow underline decoration-yellow/40 underline-offset-4 hover:decoration-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                    >assarturopratelli.eventi@gmail.com</a
+                  >.
+                </p>
+                <p>
+                  Per informazioni, richieste o dubbi:
+                  <a
+                    href="mailto:assarturopratelli.eventi@gmail.com"
+                    class="font-medium text-yellow underline decoration-yellow/40 underline-offset-4 hover:decoration-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                    >assarturopratelli.eventi@gmail.com</a
+                  >.
+                </p>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7">
+              <form
+                action="#"
+                method="post"
+                enctype="multipart/form-data"
+                class="grid gap-[clamp(1.25rem,2vw,1.75rem)] sm:grid-cols-2"
+              >
+                <p class="text-fine text-gray sm:col-span-2">
+                  I campi contrassegnati con
+                  <span class="text-orange">*</span> sono obbligatori.
+                </p>
+
+                <div class="sm:col-span-2">
+                  <label
+                    for="band-name"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >Nome artista / band
+                    <span class="text-orange" aria-hidden="true">*</span></label
+                  >
+                  <input
+                    id="band-name"
+                    name="band-name"
+                    type="text"
+                    required
+                    autocomplete="organization"
+                    class="min-h-[44px] w-full rounded-xl border border-white/15 bg-white/[0.04] px-[clamp(0.9rem,1.2vw,1.25rem)] py-[clamp(0.75rem,1vw,1rem)] text-body text-white transition placeholder:text-gray/40 focus:border-yellow focus:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow"
+                  />
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label
+                    for="referente"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >Nome e cognome dell'artista / referente della band
+                    <span class="text-orange" aria-hidden="true">*</span></label
+                  >
+                  <input
+                    id="referente"
+                    name="referente"
+                    type="text"
+                    required
+                    autocomplete="name"
+                    class="min-h-[44px] w-full rounded-xl border border-white/15 bg-white/[0.04] px-[clamp(0.9rem,1.2vw,1.25rem)] py-[clamp(0.75rem,1vw,1rem)] text-body text-white transition placeholder:text-gray/40 focus:border-yellow focus:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow"
+                  />
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label
+                    for="componenti"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >Altri componenti della band e relativi strumenti</label
+                  >
+                  <textarea
+                    id="componenti"
+                    name="componenti"
+                    rows="3"
+                    aria-describedby="componenti-help"
+                    class="w-full rounded-xl border border-white/15 bg-white/[0.04] px-[clamp(0.9rem,1.2vw,1.25rem)] py-[clamp(0.75rem,1vw,1rem)] text-body text-white transition placeholder:text-gray/40 focus:border-yellow focus:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow"
+                  ></textarea>
+                  <p id="componenti-help" class="mt-1.5 text-fine text-gray/70">
+                    Solo per le band: nome, cognome e strumento di ciascun
+                    componente.
+                  </p>
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label
+                    for="nascita"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >Luogo e data di nascita dell'artista / referente
+                    <span class="text-orange" aria-hidden="true">*</span></label
+                  >
+                  <input
+                    id="nascita"
+                    name="nascita"
+                    type="text"
+                    required
+                    placeholder="Es. Siena, 12/05/1998"
+                    class="min-h-[44px] w-full rounded-xl border border-white/15 bg-white/[0.04] px-[clamp(0.9rem,1.2vw,1.25rem)] py-[clamp(0.75rem,1vw,1rem)] text-body text-white transition placeholder:text-gray/40 focus:border-yellow focus:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="email"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >E-mail di riferimento
+                    <span class="text-orange" aria-hidden="true">*</span></label
+                  >
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    autocomplete="email"
+                    class="min-h-[44px] w-full rounded-xl border border-white/15 bg-white/[0.04] px-[clamp(0.9rem,1.2vw,1.25rem)] py-[clamp(0.75rem,1vw,1rem)] text-body text-white transition placeholder:text-gray/40 focus:border-yellow focus:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="telefono"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >Numero di telefono
+                    <span class="text-orange" aria-hidden="true">*</span></label
+                  >
+                  <input
+                    id="telefono"
+                    name="telefono"
+                    type="tel"
+                    required
+                    autocomplete="tel"
+                    class="min-h-[44px] w-full rounded-xl border border-white/15 bg-white/[0.04] px-[clamp(0.9rem,1.2vw,1.25rem)] py-[clamp(0.75rem,1vw,1rem)] text-body text-white transition placeholder:text-gray/40 focus:border-yellow focus:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow"
+                  />
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label
+                    for="social"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >Link ai profili social</label
+                  >
+                  <input
+                    id="social"
+                    name="social"
+                    type="url"
+                    inputmode="url"
+                    placeholder="Instagram, Spotify, YouTube, SoundCloud, Bandcamp…"
+                    aria-describedby="social-help"
+                    class="min-h-[44px] w-full rounded-xl border border-white/15 bg-white/[0.04] px-[clamp(0.9rem,1.2vw,1.25rem)] py-[clamp(0.75rem,1vw,1rem)] text-body text-white transition placeholder:text-gray/40 focus:border-yellow focus:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow"
+                  />
+                  <p id="social-help" class="mt-1.5 text-fine text-gray/70">
+                    Campo non obbligatorio.
+                  </p>
+                </div>
+
+                <div>
+                  <label
+                    for="demo"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >Demo del brano
+                    <span class="text-orange" aria-hidden="true">*</span></label
+                  >
+                  <input
+                    id="demo"
+                    name="demo"
+                    type="file"
+                    required
+                    accept="audio/*,.mp3,.wav,.m4a"
+                    aria-describedby="demo-help"
+                    class="w-full cursor-pointer rounded-xl border border-white/15 bg-white/[0.04] text-body text-gray transition file:mr-4 file:cursor-pointer file:border-0 file:bg-yellow file:px-[clamp(0.9rem,1.2vw,1.25rem)] file:py-[clamp(0.75rem,1vw,1rem)] file:text-fine file:font-bold file:uppercase file:text-ink hover:file:bg-white focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-yellow"
+                  />
+                  <p id="demo-help" class="mt-1.5 text-fine text-gray/70">
+                    Il brano deve essere inedito. Formati audio (mp3, wav, m4a).
+                  </p>
+                </div>
+
+                <div>
+                  <label
+                    for="testo-file"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >Testo del brano
+                    <span class="text-orange" aria-hidden="true">*</span></label
+                  >
+                  <input
+                    id="testo-file"
+                    name="testo-file"
+                    type="file"
+                    required
+                    accept=".doc,.docx,.pdf,application/pdf,application/msword"
+                    aria-describedby="testo-help"
+                    class="w-full cursor-pointer rounded-xl border border-white/15 bg-white/[0.04] text-body text-gray transition file:mr-4 file:cursor-pointer file:border-0 file:bg-yellow file:px-[clamp(0.9rem,1.2vw,1.25rem)] file:py-[clamp(0.75rem,1vw,1rem)] file:text-fine file:font-bold file:uppercase file:text-ink hover:file:bg-white focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-yellow"
+                  />
+                  <p id="testo-help" class="mt-1.5 text-fine text-gray/70">
+                    Formato Word o PDF. Se il testo è in inglese, allega anche
+                    la traduzione.
+                  </p>
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label
+                    for="sintesi"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >Sintesi del testo
+                    <span class="text-orange" aria-hidden="true">*</span></label
+                  >
+                  <textarea
+                    id="sintesi"
+                    name="sintesi"
+                    rows="3"
+                    required
+                    data-wordcount="40-60"
+                    aria-describedby="sintesi-help"
+                    class="w-full rounded-xl border border-white/15 bg-white/[0.04] px-[clamp(0.9rem,1.2vw,1.25rem)] py-[clamp(0.75rem,1vw,1rem)] text-body text-white transition placeholder:text-gray/40 focus:border-yellow focus:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow"
+                  ></textarea>
+                  <p id="sintesi-help" class="mt-1.5 text-fine text-gray/70">
+                    Una sintesi del significato del brano.
+                    <span data-wordcount-label>40–60 parole.</span>
+                  </p>
+                </div>
+
+                <div class="sm:col-span-2">
+                  <label
+                    for="bio"
+                    class="mb-2 block text-fine font-medium text-white"
+                    >Breve biografia dell'artista / band
+                    <span class="text-orange" aria-hidden="true">*</span></label
+                  >
+                  <textarea
+                    id="bio"
+                    name="bio"
+                    rows="4"
+                    required
+                    data-wordcount="80-120"
+                    aria-describedby="bio-help"
+                    class="w-full rounded-xl border border-white/15 bg-white/[0.04] px-[clamp(0.9rem,1.2vw,1.25rem)] py-[clamp(0.75rem,1vw,1rem)] text-body text-white transition placeholder:text-gray/40 focus:border-yellow focus:bg-white/[0.07] focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow"
+                  ></textarea>
+                  <p id="bio-help" class="mt-1.5 text-fine text-gray/70">
+                    <span data-wordcount-label>80–120 parole.</span>
+                  </p>
+                </div>
+
+                <fieldset
+                  class="sm:col-span-2 space-y-[clamp(0.75rem,1.2vw,1.25rem)] rounded-2xl border border-white/10 bg-white/[0.03] p-[clamp(1.1rem,1.6vw,1.75rem)]"
+                >
+                  <legend
+                    class="px-2 text-fine font-medium uppercase tracking-wide text-yellow"
+                  >
+                    Consensi obbligatori
+                  </legend>
+
+                  <label
+                    for="privacy"
+                    class="flex cursor-pointer items-start gap-3 text-body text-gray"
+                  >
+                    <input
+                      id="privacy"
+                      name="privacy"
+                      type="checkbox"
+                      required
+                      class="mt-1 h-5 w-5 shrink-0 cursor-pointer accent-orange focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                    />
+                    <span>
+                      Confermo di aver letto l'informativa sulla privacy e di
+                      accettarla.
+                      <a
+                        href="#"
+                        class="font-medium text-yellow underline decoration-yellow/40 underline-offset-4 hover:decoration-yellow"
+                        >Informativa privacy</a
+                      >
+                      <span class="text-orange" aria-hidden="true">*</span>
+                    </span>
+                  </label>
+
+                  <label
+                    for="regolamento-ck"
+                    class="flex cursor-pointer items-start gap-3 text-body text-gray"
+                  >
+                    <input
+                      id="regolamento-ck"
+                      name="regolamento"
+                      type="checkbox"
+                      required
+                      class="mt-1 h-5 w-5 shrink-0 cursor-pointer accent-orange focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                    />
+                    <span>
+                      Confermo di aver letto il regolamento e di accettarlo in
+                      ogni suo articolo.
+                      <a
+                        href="#"
+                        class="font-medium text-yellow underline decoration-yellow/40 underline-offset-4 hover:decoration-yellow"
+                        >Regolamento ETVAC 2026</a
+                      >
+                      <span class="text-orange" aria-hidden="true">*</span>
+                    </span>
+                  </label>
+
+                  <label
+                    for="diritti"
+                    class="flex cursor-pointer items-start gap-3 text-body text-gray"
+                  >
+                    <input
+                      id="diritti"
+                      name="diritti"
+                      type="checkbox"
+                      required
+                      class="mt-1 h-5 w-5 shrink-0 cursor-pointer accent-orange focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+                    />
+                    <span>
+                      Confermo di concedere i diritti audio e video del mio
+                      brano a E Ti Vengo a Cercare 2026 – Siena Music Contest a
+                      fini promozionali e per la riproduzione presso le radio
+                      instore dei punti vendita di Etruria Retail dal 1° gennaio
+                      2027 al 30 giugno 2027.
+                      <span class="text-orange" aria-hidden="true">*</span>
+                    </span>
+                  </label>
+                </fieldset>
+
+                <div class="sm:col-span-2">
+                  <button
+                    type="submit"
+                    class="inline-flex min-h-[44px] w-full items-center justify-center gap-3 rounded-full bg-orange px-[clamp(1.75rem,2.5vw,3rem)] py-[clamp(0.95rem,1.2vw,1.35rem)] text-lead font-bold uppercase tracking-wide text-white transition hover:bg-yellow hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-yellow sm:w-auto"
+                  >
+                    Invia la candidatura <span aria-hidden="true">→</span>
+                  </button>
+                  <p class="mt-4 text-fine text-gray/70">
+                    Dopo l'invio del modulo ricordati di effettuare il bonifico
+                    della quota di € 20,00 all'IBAN dell'Associazione Arturo
+                    Pratelli.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="finalcta"
+        class="relative flex min-h-[80svh] items-center overflow-hidden bg-orange py-section text-ink"
+      >
+        <div class="absolute inset-0 -z-10">
+          <img
+            src="img/wave-orange.png"
+            alt=""
+            aria-hidden="true"
+            class="h-full w-full scale-110 object-cover opacity-60 mix-blend-multiply blur-edge motion-safe:animate-drift"
+            loading="lazy"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-orange/60 via-transparent to-yellow/30"
+          ></div>
+        </div>
+        <div
+          aria-hidden="true"
+          class="op-art pointer-events-none absolute -bottom-[12%] -right-[6%] aspect-square w-[clamp(15rem,32vw,38rem)] text-ink/20 motion-safe:animate-spin-slow"
+        ></div>
+        <div class="relative mx-auto max-w-shell px-gutter">
+          <p class="text-eyebrow uppercase text-blue">
+            Porta la tua musica sul palco
+          </p>
+          <h2
+            class="mt-[clamp(1rem,2vw,2rem)] max-w-[20ch] text-hero font-black uppercase leading-[0.85]"
+          >
+            Falla ascoltare a chi può fare la
+            <span class="text-stroke text-ink">differenza</span>
+          </h2>
+          <p
+            class="mt-[clamp(1.5rem,2.5vw,2.5rem)] max-w-prose text-lead font-medium text-ink/80"
+          >
+            Se sei un artista, un cantautore o una band under 35 con brani
+            originali, questa è l'occasione per incontrare i professionisti del
+            settore e dare visibilità alla tua musica.
+          </p>
+          <a
+            href="#form"
+            class="mt-[clamp(2rem,3vw,3rem)] inline-flex min-h-[44px] items-center gap-3 rounded-full bg-ink px-[clamp(1.75rem,2.5vw,3rem)] py-[clamp(0.95rem,1.2vw,1.35rem)] text-lead font-bold uppercase tracking-wide text-white transition hover:bg-blue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-ink"
+          >
+            Iscriviti a ETVAC 2026 <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      id="site-footer"
+      class="bg-ink py-[clamp(2.5rem,5vw,5rem)] text-gray"
+    >
+      <div
+        class="mx-auto flex max-w-shell flex-col gap-[clamp(1.5rem,2.5vw,2.5rem)] px-gutter md:flex-row md:items-end md:justify-between"
+      >
+        <div>
+          <img
+            src="img/logo-white.png"
+            alt="E Ti Vengo a Cercare — Siena Music Contest"
+            class="h-[clamp(4.5rem,10vw,9rem)] w-auto"
+            width="285"
+            height="108"
+            loading="lazy"
+          />
+          <p
+            class="mt-[clamp(0.75rem,1.5vw,1.25rem)] text-fine uppercase tracking-wide"
+          >
+            Edizione 2026 — <span class="text-orange">Siena</span>
+          </p>
+        </div>
+        <div class="text-fine">
+          <p class="font-medium text-white">
+            28 dicembre 2026 — Teatro dei Rinnovati, Siena
+          </p>
+          <p class="mt-1">Iscrizioni fino al 15 novembre 2026, ore 23:59</p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="lightbox"
+      class="fixed inset-0 z-[100] hidden items-center justify-center bg-ink/95 p-[clamp(1rem,4vw,4rem)] backdrop-blur-md"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Galleria immagini"
+    >
+      <button
+        type="button"
+        data-lightbox-close
+        aria-label="Chiudi"
+        class="absolute right-[clamp(1rem,3vw,2.5rem)] top-[clamp(1rem,3vw,2.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition hover:bg-yellow hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+      >
+        ✕
+      </button>
+      <button
+        type="button"
+        data-lightbox-prev
+        aria-label="Immagine precedente"
+        class="absolute left-[clamp(0.5rem,2vw,2rem)] flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition hover:bg-yellow hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+      >
+        ‹
+      </button>
+      <button
+        type="button"
+        data-lightbox-next
+        aria-label="Immagine successiva"
+        class="absolute right-[clamp(0.5rem,2vw,2rem)] flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-2xl text-white transition hover:bg-yellow hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
+      >
+        ›
+      </button>
+      <figure
+        class="flex max-h-full max-w-[min(90rem,92vw)] flex-col items-center gap-4"
+      >
+        <img
+          id="lightbox-img"
+          src=""
+          alt=""
+          class="max-h-[80svh] w-auto rounded-[clamp(0.85rem,1.5vw,1.5rem)] shadow-2xl shadow-black/60"
+        />
+        <figcaption
+          id="lightbox-cap"
+          class="text-fine font-medium uppercase tracking-wide text-white/80"
+        ></figcaption>
+      </figure>
+    </div>
+
+    <script>
+      const siteHeader = document.getElementById("site-header");
+      const headerScrolled = [
+        "bg-ink/80",
+        "backdrop-blur-md",
+        "shadow-lg",
+        "shadow-black/30",
+      ];
+      const onScroll = () => {
+        const scrolled = window.scrollY > 40;
+        headerScrolled.forEach((c) => siteHeader.classList.toggle(c, scrolled));
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+
+      document.querySelectorAll("textarea[data-wordcount]").forEach((field) => {
+        const [min, max] = field.dataset.wordcount.split("-").map(Number);
+        const label = document.querySelector(
+          "#" +
+            field.getAttribute("aria-describedby") +
+            " [data-wordcount-label]",
+        );
+        const base = label ? label.textContent : "";
+        const update = () => {
+          const words = field.value.trim().split(/\s+/).filter(Boolean).length;
+          if (!label) return;
+          const ok = words >= min && words <= max;
+          label.textContent = base + " — " + words + " parole";
+          label.classList.toggle("text-yellow", !ok && words > 0);
+          field.setCustomValidity(
+            words === 0 || ok
+              ? ""
+              : "Inserisci tra " + min + " e " + max + " parole.",
+          );
+        };
+        field.addEventListener("input", update);
+      });
+
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      const wavePath = (() => {
+        const w = 2880,
+          h = 100,
+          period = 480,
+          amp = 22,
+          base = 44,
+          step = 24;
+        let d = "M0," + base;
+        for (let x = 0; x <= w; x += step) {
+          const y = base + amp * Math.sin((2 * Math.PI * x) / period);
+          d += " L" + x + "," + y.toFixed(1);
+        }
+        d += " L" + w + "," + h + " L0," + h + " Z";
+        return d;
+      })();
+
+      const boundaries = [
+        { before: "marquee", prev: "#0a0a0a", next: "#eae33a" },
+        { before: "contest", prev: "#eae33a", next: "#0a0a0a" },
+        { before: "premi", prev: "#0a0a0a", next: "#e85321" },
+        { before: "gallery", prev: "#e85321", next: "#0a0a0a" },
+        { before: "visibilita", prev: "#0a0a0a", next: "#155da2" },
+        { before: "iscrizioni", prev: "#155da2", next: "#eae33a" },
+        { before: "form", prev: "#eae33a", next: "#0a0a0a" },
+        { before: "finalcta", prev: "#0a0a0a", next: "#e85321" },
+        { before: "site-footer", prev: "#e85321", next: "#0a0a0a" },
+      ];
+
+      boundaries.forEach(({ before, prev, next }, i) => {
+        const target = document.getElementById(before);
+        if (!target) return;
+        const divider = document.createElement("div");
+        divider.setAttribute("aria-hidden", "true");
+        divider.style.cssText =
+          "position:relative;overflow:hidden;line-height:0;background:" +
+          prev +
+          ";height:clamp(2.5rem,5vw,5.5rem)";
+        const speed = 13 + (i % 3) * 4;
+        divider.innerHTML =
+          '<svg preserveAspectRatio="none" viewBox="0 0 2880 100" style="position:absolute;bottom:-1px;left:0;width:200%;height:100%;' +
+          (reduceMotion
+            ? ""
+            : "animation:wave " + speed + "s linear infinite") +
+          '"><path d="' +
+          wavePath +
+          '" fill="' +
+          next +
+          '"/></svg>';
+        target.parentNode.insertBefore(divider, target);
+      });
+
+      document.querySelectorAll("[data-marquee]").forEach((track) => {
+        track.innerHTML += track.innerHTML;
+        Array.from(track.children)
+          .slice(track.children.length / 2)
+          .forEach((clone) => {
+            clone.setAttribute("aria-hidden", "true");
+            clone
+              .querySelectorAll("button")
+              .forEach((b) => b.setAttribute("tabindex", "-1"));
+          });
+      });
+
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      const lightboxCap = document.getElementById("lightbox-cap");
+      const slides = [];
+      const slideIndex = new Map();
+      document.querySelectorAll("[data-gallery-item]").forEach((item) => {
+        const full = item.dataset.full;
+        if (!slideIndex.has(full)) {
+          slideIndex.set(full, slides.length);
+          slides.push({
+            full,
+            alt: item.querySelector("img")?.alt || "",
+            caption: item.dataset.caption || "",
+          });
+        }
+        item.addEventListener("click", () =>
+          openLightbox(slideIndex.get(full)),
+        );
+      });
+      let currentIndex = 0;
+      let lastFocused = null;
+
+      const showItem = (index) => {
+        currentIndex = (index + slides.length) % slides.length;
+        const slide = slides[currentIndex];
+        lightboxImg.src = slide.full;
+        lightboxImg.alt = slide.alt;
+        lightboxCap.textContent = slide.caption;
+      };
+
+      const openLightbox = (index) => {
+        lastFocused = document.activeElement;
+        showItem(index);
+        lightbox.classList.remove("hidden");
+        lightbox.classList.add("flex");
+        document.body.style.overflow = "hidden";
+        lightbox.querySelector("[data-lightbox-close]").focus();
+      };
+
+      const closeLightbox = () => {
+        lightbox.classList.add("hidden");
+        lightbox.classList.remove("flex");
+        document.body.style.overflow = "";
+        if (lastFocused) lastFocused.focus();
+      };
+
+      lightbox
+        .querySelector("[data-lightbox-close]")
+        .addEventListener("click", closeLightbox);
+      lightbox
+        .querySelector("[data-lightbox-prev]")
+        .addEventListener("click", () => showItem(currentIndex - 1));
+      lightbox
+        .querySelector("[data-lightbox-next]")
+        .addEventListener("click", () => showItem(currentIndex + 1));
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (lightbox.classList.contains("hidden")) return;
+        if (e.key === "Escape") closeLightbox();
+        if (e.key === "ArrowLeft") showItem(currentIndex - 1);
+        if (e.key === "ArrowRight"n) showItem(currentIndex + 1);
+      });
+    </script>
+  </body>
+</html>
