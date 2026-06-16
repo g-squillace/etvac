@@ -5,3 +5,6 @@ node_modules/
 /site/img/*.jpg
 
 Font esportati.zip
+
+# Local Netlify folder
+.netlify

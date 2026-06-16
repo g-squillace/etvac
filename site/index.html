@@ -59,7 +59,7 @@
                 { lineHeight: "0.82", letterSpacing: "-0.03em" },
               ],
               hero: [
-                "clamp(2.6rem, 10vw, 9.5rem)",
+                "clamp(2.6rem, 8vw, 9.5rem)",
                 { lineHeight: "0.86", letterSpacing: "-0.025em" },
               ],
               jumbo: [
@@ -93,7 +93,7 @@
             },
             spacing: {
               gutter: "clamp(1.25rem, 5vw, 8rem)",
-              section: "clamp(4.5rem, 11vw, 12rem)",
+              section: "clamp(2.75rem, 10vw, 12rem)",
             },
             maxWidth: {
               shell: "min(112rem, 100%)",
@@ -244,8 +244,17 @@
       class="fixed inset-x-0 top-0 z-50 transition-colors duration-300"
     >
       <div
-        class="mx-auto flex max-w-shell items-center justify-between px-gutter py-[clamp(1rem,1.6vw,1.75rem)]"
+        class="mx-auto flex max-w-shell items-center justify-between px-gutter py-[clamp(0.4rem,1vw,1rem)]"
       >
+        <a href="#main" class="shrink-0 lg:hidden" aria-label="E Ti Vengo a Cercare 2026, home">
+          <img
+            src="img/logo-white.png"
+            alt="E Ti Vengo a Cercare — Siena Music Contest"
+            class="h-[clamp(4.5rem,20vw,6.5rem)] w-auto"
+            width="285"
+            height="108"
+          />
+        </a>
         <nav
           aria-label="Navigazione principale"
           class="flex items-center gap-[clamp(0.9rem,2vw,2.25rem)]"
@@ -411,7 +420,7 @@
                 src="img/logo-white.png"
                 alt=""
                 aria-hidden="true"
-                class="absolute -left-[clamp(1.5rem,4vw,3.5rem)] -top-[clamp(3.5rem,8vw,7rem)] w-[clamp(16rem,34vw,26rem)] drop-shadow-[0_4px_16px_rgba(0,0,0,0.55)]"
+                class="absolute -left-[clamp(1.5rem,4vw,3.5rem)] -top-[clamp(3.5rem,8vw,7rem)] hidden w-[clamp(16rem,34vw,26rem)] drop-shadow-[0_4px_16px_rgba(0,0,0,0.55)] lg:block"
                 width="285"
                 height="108"
               />
@@ -503,7 +512,7 @@
               <img
                 src="img/wave-orange.png"
                 alt="Visualizzazione astratta di onde sonore nei colori del contest"
-                class="aspect-[4/5] w-full scale-110 object-cover blur-edge motion-safe:animate-drift"
+                class="aspect-[16/10] w-full scale-110 object-cover blur-edge motion-safe:animate-drift lg:aspect-[4/5]"
                 loading="lazy"
               />
             </div>
@@ -712,7 +721,7 @@
           <div class="relative overflow-hidden">
             <ul
               data-marquee
-              class="flex h-[clamp(10rem,17vw,16rem)] w-max items-stretch gap-[clamp(0.6rem,1vw,1rem)] motion-safe:animate-gallery-l hover:[animation-play-state:paused]"
+              class="flex h-[clamp(7rem,17vw,16rem)] w-max items-stretch gap-[clamp(0.6rem,1vw,1rem)] motion-safe:animate-gallery-l hover:[animation-play-state:paused]"
             >
               <li class="shrink-0">
                 <button
@@ -863,7 +872,7 @@
           <div class="relative overflow-hidden">
             <ul
               data-marquee
-              class="flex h-[clamp(10rem,17vw,16rem)] w-max items-stretch gap-[clamp(0.6rem,1vw,1rem)] motion-safe:animate-gallery-r hover:[animation-play-state:paused]"
+              class="flex h-[clamp(7rem,17vw,16rem)] w-max items-stretch gap-[clamp(0.6rem,1vw,1rem)] motion-safe:animate-gallery-r hover:[animation-play-state:paused]"
             >
               <li class="shrink-0">
                 <button
@@ -1014,7 +1023,7 @@
           <div class="relative overflow-hidden">
             <ul
               data-marquee
-              class="flex h-[clamp(10rem,17vw,16rem)] w-max items-stretch gap-[clamp(0.6rem,1vw,1rem)] motion-safe:animate-gallery-l hover:[animation-play-state:paused]"
+              class="flex h-[clamp(7rem,17vw,16rem)] w-max items-stretch gap-[clamp(0.6rem,1vw,1rem)] motion-safe:animate-gallery-l hover:[animation-play-state:paused]"
             >
               <li class="shrink-0">
                 <button
@@ -1305,7 +1314,7 @@
                 id="iscrizione-form"
                 action="https://formspree.io/f/INSERISCI_FORM_ID"
                 method="post"
-                class="grid gap-[clamp(1.25rem,2vw,1.75rem)] sm:grid-cols-2"
+                class="grid gap-[clamp(0.85rem,2vw,1.75rem)] sm:grid-cols-2"
               >
                 <input type="hidden" name="_subject" value="Nuova candidatura ETVAC 2026" />
                 <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden" />
@@ -1830,7 +1839,7 @@
         divider.style.cssText =
           "position:relative;overflow:hidden;line-height:0;background:" +
           prev +
-          ";height:clamp(2.5rem,5vw,5.5rem)";
+          ";height:clamp(1.5rem,5vw,5.5rem)";
         const speed = 13 + (i % 3) * 4;
         divider.innerHTML =
           '<svg preserveAspectRatio="none" viewBox="0 0 2880 100" style="position:absolute;bottom:-1px;left:0;width:200%;height:100%;' +
