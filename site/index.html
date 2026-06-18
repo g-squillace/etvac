@@ -10,6 +10,11 @@
     />
     <meta name="theme-color" content="#0a0a0a" />
 
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
     <link
       rel="preload"
       href="fonts/FormaDJRDisplay-Black.woff2"
@@ -20,6 +25,13 @@
     <link
       rel="preload"
       href="fonts/FormaDJRDisplay-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/Inter-Variable.woff2"
       as="font"
       type="font/woff2"
       crossorigin
@@ -52,6 +64,14 @@
             },
             fontFamily: {
               display: ['"Forma DJR Display"', "system-ui", "sans-serif"],
+              sans: [
+                "Inter",
+                "-apple-system",
+                "BlinkMacSystemFont",
+                '"Segoe UI"',
+                "system-ui",
+                "sans-serif",
+              ],
             },
             fontSize: {
               mega: [
@@ -137,6 +157,12 @@
     </script>
 
     <style type="text/tailwindcss">
+      @font-face {
+        font-family: "Inter";
+        src: url("fonts/Inter-Variable.woff2") format("woff2");
+        font-weight: 100 900;
+        font-display: swap;
+      }
       @font-face {
         font-family: "Forma DJR Display";
         src: url("fonts/FormaDJRDisplay-Thin.woff2") format("woff2");
@@ -231,7 +257,7 @@
   </head>
 
   <body
-    class="bg-ink font-display text-white antialiased selection:bg-yellow selection:text-ink"
+    class="bg-ink font-sans text-white antialiased selection:bg-yellow selection:text-ink"
   >
     <a
       href="#main"
@@ -327,7 +353,7 @@
         >
           <div class="lg:col-span-7">
             <p
-              class="mb-[clamp(1.25rem,2.5vw,2.5rem)] flex flex-wrap items-center gap-x-4 gap-y-2 text-eyebrow font-medium uppercase text-yellow"
+              class="mb-[clamp(1.25rem,2.5vw,2.5rem)] flex flex-wrap items-center gap-x-4 gap-y-2 font-display text-eyebrow font-bold uppercase text-yellow"
             >
               <span>Siena Music Contest</span>
               <span aria-hidden="true" class="text-gray/60">●</span>
@@ -335,12 +361,12 @@
             </p>
 
             <h1 class="font-black uppercase leading-[0.82]">
-              <span class="block text-hero text-white">E Ti Vengo</span>
-              <span class="block text-hero text-stroke text-white"
+              <span class="block font-display text-hero text-white">E Ti Vengo</span>
+              <span class="block font-display text-hero text-stroke text-white"
                 >a Cercare</span
               >
               <span
-                class="mt-[clamp(0.5rem,1vw,1rem)] block text-mega text-orange"
+                class="mt-[clamp(0.5rem,1vw,1rem)] block font-display text-mega text-orange"
                 >2026</span
               >
             </h1>
@@ -377,18 +403,18 @@
               class="mt-[clamp(2.5rem,4vw,4rem)] grid max-w-3xl grid-cols-2 gap-[clamp(1rem,2vw,2rem)] border-t border-white/15 pt-[clamp(1.5rem,2.5vw,2.5rem)] sm:grid-cols-3"
             >
               <div>
-                <dt class="text-eyebrow uppercase text-gray">Data</dt>
-                <dd class="mt-1 text-head font-bold text-white">28 Dic 2026</dd>
+                <dt class="font-display text-eyebrow font-bold uppercase text-gray">Data</dt>
+                <dd class="mt-1 font-display text-head font-bold text-white">28 Dic 2026</dd>
               </div>
               <div>
-                <dt class="text-eyebrow uppercase text-gray">Luogo</dt>
-                <dd class="mt-1 text-head font-bold text-white">
+                <dt class="font-display text-eyebrow font-bold uppercase text-gray">Luogo</dt>
+                <dd class="mt-1 font-display text-head font-bold text-white">
                   Teatro dei Rinnovati
                 </dd>
               </div>
               <div class="col-span-2 sm:col-span-1">
-                <dt class="text-eyebrow uppercase text-gray">Finalisti</dt>
-                <dd class="mt-1 text-head font-bold text-yellow">
+                <dt class="font-display text-eyebrow font-bold uppercase text-gray">Finalisti</dt>
+                <dd class="mt-1 font-display text-head font-bold text-yellow">
                   10 progetti dal vivo
                 </dd>
               </div>
@@ -438,7 +464,7 @@
           aria-hidden="true"
         >
           <span
-            class="flex items-center text-[clamp(1.5rem,3.5vw,3rem)] font-black uppercase tracking-tight"
+            class="flex items-center font-display text-[clamp(1.5rem,3.5vw,3rem)] font-black uppercase tracking-tight"
           >
             <span class="px-6">Musica originale</span
             ><span class="px-6 text-orange">✦</span>
@@ -450,7 +476,7 @@
             ><span class="px-6 text-orange">✦</span>
           </span>
           <span
-            class="flex items-center text-[clamp(1.5rem,3.5vw,3rem)] font-black uppercase tracking-tight"
+            class="flex items-center font-display text-[clamp(1.5rem,3.5vw,3rem)] font-black uppercase tracking-tight"
           >
             <span class="px-6">Musica originale</span
             ><span class="px-6 text-orange">✦</span>
@@ -472,9 +498,9 @@
           class="mx-auto grid max-w-shell gap-[clamp(2rem,5vw,5rem)] px-gutter lg:grid-cols-12"
         >
           <div class="lg:col-span-7">
-            <p class="text-eyebrow uppercase text-orange">Il contest</p>
+            <p class="font-display text-eyebrow font-bold uppercase text-orange">Il contest</p>
             <h2
-              class="mt-[clamp(1rem,1.5vw,1.5rem)] text-jumbo font-black uppercase"
+              class="mt-[clamp(1rem,1.5vw,1.5rem)] font-display text-jumbo font-black uppercase"
             >
               Il talento emergente<br />
               <span class="text-stroke text-white">sul palco</span> che conta
@@ -517,9 +543,9 @@
               />
             </div>
             <div>
-              <p class="text-eyebrow uppercase text-orange">La giuria</p>
+              <p class="font-display text-eyebrow font-bold uppercase text-orange">La giuria</p>
               <h2
-                class="mt-[clamp(1rem,1.5vw,1.5rem)] text-title font-black uppercase"
+                class="mt-[clamp(1rem,1.5vw,1.5rem)] font-display text-title font-black uppercase"
               >
                 Una giuria di professionisti del settore musicale
               </h2>
@@ -532,25 +558,25 @@
                 class="mt-[clamp(1.5rem,2.5vw,2.5rem)] grid gap-px overflow-hidden rounded-2xl bg-white/15 sm:grid-cols-2"
               >
                 <li class="bg-ink p-[clamp(1.1rem,1.6vw,1.75rem)]">
-                  <span class="text-head font-bold text-yellow">01</span>
+                  <span class="font-display text-head font-bold text-yellow">01</span>
                   <p class="mt-2 text-body font-medium text-white">
                     Docenti di scuole di musica
                   </p>
                 </li>
                 <li class="bg-ink p-[clamp(1.1rem,1.6vw,1.75rem)]">
-                  <span class="text-head font-bold text-yellow">02</span>
+                  <span class="font-display text-head font-bold text-yellow">02</span>
                   <p class="mt-2 text-body font-medium text-white">
                     Produttori musicali
                   </p>
                 </li>
                 <li class="bg-ink p-[clamp(1.1rem,1.6vw,1.75rem)]">
-                  <span class="text-head font-bold text-yellow">03</span>
+                  <span class="font-display text-head font-bold text-yellow">03</span>
                   <p class="mt-2 text-body font-medium text-white">
                     Musicisti professionisti
                   </p>
                 </li>
                 <li class="bg-ink p-[clamp(1.1rem,1.6vw,1.75rem)]">
-                  <span class="text-head font-bold text-yellow">04</span>
+                  <span class="font-display text-head font-bold text-yellow">04</span>
                   <p class="mt-2 text-body font-medium text-white">
                     Manager ed esperti dell'industria
                   </p>
@@ -574,9 +600,9 @@
             class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between"
           >
             <div>
-              <p class="text-eyebrow uppercase text-ink/70">I premi</p>
+              <p class="font-display text-eyebrow font-bold uppercase text-ink/70">I premi</p>
               <h2
-                class="mt-[clamp(0.75rem,1.5vw,1.5rem)] text-jumbo font-black uppercase"
+                class="mt-[clamp(0.75rem,1.5vw,1.5rem)] font-display text-jumbo font-black uppercase"
               >
                 Premi
               </h2>
@@ -598,10 +624,10 @@
                 <span class="text-[clamp(2.5rem,5vw,4.5rem)]" aria-hidden="true"
                   >🏆</span
                 >
-                <h3 class="mt-4 text-eyebrow uppercase text-yellow">
+                <h3 class="mt-4 font-display text-eyebrow font-bold uppercase text-yellow">
                   Primo premio
                 </h3>
-                <p class="mt-3 text-head font-black uppercase leading-[1.02] [overflow-wrap:anywhere]">
+                <p class="mt-3 font-display text-head font-black uppercase leading-[1.02] [overflow-wrap:anywhere]">
                   3 giorni di registrazione professionale
                 </p>
               </div>
@@ -618,10 +644,10 @@
               <span class="text-[clamp(2rem,4vw,3.5rem)]" aria-hidden="true"
                 >🥈</span
               >
-              <h3 class="mt-3 text-eyebrow uppercase text-ink/70">
+              <h3 class="mt-3 font-display text-eyebrow font-bold uppercase text-ink/70">
                 Secondo premio
               </h3>
-              <p class="mt-2 text-head font-black uppercase leading-[0.98]">
+              <p class="mt-2 font-display text-head font-black uppercase leading-[0.98]">
                 Incisione in presa diretta
               </p>
               <p class="mt-3 text-body text-ink/80">
@@ -638,10 +664,10 @@
               <span class="text-[clamp(2rem,4vw,3.5rem)]" aria-hidden="true"
                 >🥉</span
               >
-              <h3 class="mt-3 text-eyebrow uppercase text-ink/60">
+              <h3 class="mt-3 font-display text-eyebrow font-bold uppercase text-ink/60">
                 Terzo premio
               </h3>
-              <p class="mt-2 text-head font-black uppercase leading-[0.98]">
+              <p class="mt-2 font-display text-head font-black uppercase leading-[0.98]">
                 Buono da 500€
               </p>
               <p class="mt-3 text-body text-ink/70">
@@ -656,10 +682,10 @@
               <span class="text-[clamp(2rem,4vw,3.5rem)]" aria-hidden="true"
                 >🎵</span
               >
-              <h3 class="mt-3 text-eyebrow uppercase text-yellow">
+              <h3 class="mt-3 font-display text-eyebrow font-bold uppercase text-yellow">
                 Premio discografico
               </h3>
-              <p class="mt-2 text-head font-black uppercase leading-[0.98]">
+              <p class="mt-2 font-display text-head font-black uppercase leading-[0.98]">
                 Etichetta Oltresound
               </p>
               <p class="mt-3 text-body text-white/85">
@@ -675,10 +701,10 @@
               <span class="text-[clamp(2rem,4vw,3.5rem)]" aria-hidden="true"
                 >✍️</span
               >
-              <h3 class="mt-3 text-eyebrow uppercase text-yellow">
+              <h3 class="mt-3 font-display text-eyebrow font-bold uppercase text-yellow">
                 Premio della critica
               </h3>
-              <p class="mt-2 text-head font-black uppercase leading-[0.98]">
+              <p class="mt-2 font-display text-head font-black uppercase leading-[0.98]">
                 Miglior testo originale
               </p>
               <p class="mt-3 text-body text-gray">
@@ -700,9 +726,9 @@
             class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between"
           >
             <div>
-              <p class="text-eyebrow uppercase text-orange">Gallery</p>
+              <p class="font-display text-eyebrow font-bold uppercase text-orange">Gallery</p>
               <h2
-                class="mt-[clamp(0.75rem,1.5vw,1.5rem)] text-jumbo font-black uppercase"
+                class="mt-[clamp(0.75rem,1.5vw,1.5rem)] font-display text-jumbo font-black uppercase"
               >
                 Le edizioni<br /><span class="text-stroke text-white"
                   >sul palco</span
@@ -1174,9 +1200,9 @@
           class="mx-auto grid max-w-shell items-center gap-[clamp(2rem,4vw,4rem)] px-gutter lg:grid-cols-2"
         >
           <div class="min-w-0">
-            <p class="text-eyebrow uppercase text-yellow">Visibilità</p>
+            <p class="font-display text-eyebrow font-bold uppercase text-yellow">Visibilità</p>
             <h2
-              class="mt-[clamp(1rem,1.5vw,1.5rem)] text-[clamp(1.8rem,4.5vw,3.8rem)] font-black uppercase leading-[0.95] [overflow-wrap:anywhere]"
+              class="mt-[clamp(1rem,1.5vw,1.5rem)] font-display text-[clamp(1.8rem,4.5vw,3.8rem)] font-black uppercase leading-[0.95] [overflow-wrap:anywhere]"
             >
               Un'opportunità di visibilità concreta
             </h2>
@@ -1208,11 +1234,11 @@
             class="grid gap-[clamp(2rem,4vw,4rem)] lg:grid-cols-12 lg:items-end"
           >
             <div class="lg:col-span-7">
-              <p class="text-eyebrow uppercase text-orange">
+              <p class="font-display text-eyebrow font-bold uppercase text-orange">
                 Iscrizioni aperte
               </p>
               <h2
-                class="mt-[clamp(1rem,1.5vw,1.5rem)] text-jumbo font-black uppercase leading-[0.9]"
+                class="mt-[clamp(1rem,1.5vw,1.5rem)] font-display text-jumbo font-black uppercase leading-[0.9]"
               >
                 Candidature fino al<br />
                 <span class="text-orange">15 novembre 2026</span>
@@ -1252,11 +1278,11 @@
         <div class="mx-auto max-w-shell px-gutter">
           <div class="grid gap-[clamp(2rem,4vw,4rem)] lg:grid-cols-12">
             <div class="lg:col-span-5">
-              <p class="text-eyebrow uppercase text-orange">
+              <p class="font-display text-eyebrow font-bold uppercase text-orange">
                 Modulo di iscrizione
               </p>
               <h2
-                class="mt-[clamp(1rem,1.5vw,1.5rem)] text-title font-black uppercase leading-[0.92]"
+                class="mt-[clamp(1rem,1.5vw,1.5rem)] font-display text-title font-black uppercase leading-[0.92]"
               >
                 Candida il tuo brano
               </h2>
@@ -1292,17 +1318,17 @@
                 <p>
                   Non hai ancora una demo? Scrivici a
                   <a
-                    href="mailto:assarturopratelli.eventi@gmail.com"
+                    href="mailto:info@etvac.it"
                     class="font-medium text-yellow underline decoration-yellow/40 underline-offset-4 hover:decoration-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
-                    >assarturopratelli.eventi@gmail.com</a
+                    >info@etvac.it</a
                   >.
                 </p>
                 <p>
                   Per informazioni, richieste o dubbi:
                   <a
-                    href="mailto:assarturopratelli.eventi@gmail.com"
+                    href="mailto:info@etvac.it"
                     class="font-medium text-yellow underline decoration-yellow/40 underline-offset-4 hover:decoration-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow"
-                    >assarturopratelli.eventi@gmail.com</a
+                    >info@etvac.it</a
                   >.
                 </p>
               </div>
@@ -1311,7 +1337,7 @@
             <div class="lg:col-span-7">
               <form
                 id="iscrizione-form"
-                action="https://formspree.io/f/INSERISCI_FORM_ID"
+                action="https://formspree.io/f/mojzzgrw"
                 method="post"
                 class="grid gap-[clamp(0.85rem,2vw,1.75rem)] sm:grid-cols-2"
               >
@@ -1656,11 +1682,11 @@
           class="op-art pointer-events-none absolute -bottom-[12%] -right-[6%] aspect-square w-[clamp(15rem,32vw,38rem)] text-ink/20 motion-safe:animate-spin-slow"
         ></div>
         <div class="relative mx-auto max-w-shell px-gutter">
-          <p class="text-eyebrow uppercase text-ink">
+          <p class="font-display text-eyebrow font-bold uppercase text-ink">
             Porta la tua musica sul palco
           </p>
           <h2
-            class="mt-[clamp(1rem,2vw,2rem)] max-w-[15ch] text-jumbo font-black uppercase leading-[0.88] [overflow-wrap:anywhere]"
+            class="mt-[clamp(1rem,2vw,2rem)] max-w-[15ch] font-display text-jumbo font-black uppercase leading-[0.88] [overflow-wrap:anywhere]"
           >
             Falla ascoltare a chi può fare la
             <span class="text-stroke text-ink">differenza</span>
@@ -1958,10 +1984,6 @@
         iscrizioneForm.addEventListener('submit', async (e) => {
           e.preventDefault();
           if (!iscrizioneForm.reportValidity()) return;
-          if (iscrizioneForm.action.includes('INSERISCI_FORM_ID')) {
-            showStatus('Form non ancora collegato: inserisci l’endpoint Formspree nell’attributo action.', false);
-            return;
-          }
           submitBtn.disabled = true;
           const original = submitBtn.innerHTML;
           submitBtn.innerHTML = 'Invio in corso…';
@@ -1976,7 +1998,7 @@
               showStatus('Candidatura inviata! Ti risponderemo via email. Ricordati del bonifico di € 20,00.', true);
             } else {
               const data = await res.json().catch(() => ({}));
-              showStatus(data?.errors?.[0]?.message || 'Invio non riuscito. Riprova o scrivici a assarturopratelli.eventi@gmail.com.', false);
+              showStatus(data?.errors?.[0]?.message || 'Invio non riuscito. Riprova o scrivici a info@etvac.it.', false);
             }
           } catch (err) {
             showStatus('Errore di rete. Controlla la connessione e riprova.', false);

@@ -30,6 +30,6 @@ site/
 
 ## Form di iscrizione (Formspree)
 
-Sostituire `INSERISCI_FORM_ID` nell'attributo `action` del form in `site/index.html`
-con l'endpoint del proprio form Formspree, e verificare la casella email di destinazione.
+Il form è collegato all'endpoint Formspree `https://formspree.io/f/mojzzgrw`.
+Le candidature arrivano alla casella configurata su Formspree (notifiche anche a info@etvac.it).
 Demo e testo del brano sono campi link (Drive / WeTransfer / SoundCloud).
