@@ -1,6 +1,6 @@
 # E Ti Vengo a Cercare 2026 — Siena Music Contest
 
-Landing page del contest di musica originale per artisti, cantautori e band under 35.
+Landing page del contest di musica originale per artisti, cantautori e band under 30.
 28 dicembre 2026, Teatro dei Rinnovati, Siena.
 
 ## Stack

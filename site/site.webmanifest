@@ -1,0 +1,15 @@
+{
+  "name": "E Ti Vengo a Cercare 2026 — Siena Music Contest",
+  "short_name": "ETVAC 2026",
+  "description": "Contest di musica originale per artisti, cantautori e band under 30. Siena, 28 dicembre 2026.",
+  "lang": "it",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    { "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/favicon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

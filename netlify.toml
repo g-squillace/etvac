@@ -1,6 +1,12 @@
 [build]
   publish = "site"
 
+[[redirects]]
+  from = "https://etvac.it/*"
+  to = "https://www.etvac.it/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/fonts/*"
   [headers.values]
