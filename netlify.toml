@@ -1,6 +1,15 @@
 [build]
   publish = "site"
 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/autoresponse"
+  to = "/.netlify/functions/send-autoresponse"
+  status = 200
+
 [[headers]]
   for = "/fonts/*"
   [headers.values]
